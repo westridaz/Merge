@@ -1,17 +1,17 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='almex.conf'
-CONFIGFOLDER='/root/.almex'
-COIN_DAEMON='almexd'
-COIN_CLI='almex-cli'
+CONFIG_FILE='merge.conf'
+CONFIGFOLDER='/root/.merge'
+COIN_DAEMON='merged'
+COIN_CLI='merge-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_REPO='https://github.com/ozone-investments/almex.git'
-COIN_TGZ=''
+KERN_ARCH=$(getconf LONG_BIT)
+COIN_TGZ="https://github.com/ProjectMerge/merge/releases/download/1.0.0/merge-testnet-1.0.0-linux64.tar.gz"
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Almex'
-COIN_PORT=10001
-RPC_PORT=10002
+COIN_NAME='Merge'
+COIN_PORT=62000
+RPC_PORT=63000
 
 NODEIP=$(curl -s4 icanhazip.com)
 
