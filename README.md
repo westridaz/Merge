@@ -47,9 +47,9 @@ Also, if you want to check/start/stop **Merge**, run one of the following comman
 
 ```
 systemctl status merge #To check if Merge service is running  
-systemctl start merge #To start CerberusNG service  
-systemctl stop merge #To stop CerberusNG service  
-systemctl is-enabled merge #To check if merge service is enabled on boot  
+systemctl start merge #To start Merge service  
+systemctl stop merge #To stop Merge service  
+systemctl is-enabled merge #To check if Merge service is enabled on boot  
 ```  
 ***
 
