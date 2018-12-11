@@ -4,8 +4,8 @@ Shell script to install a [Merge Masternode]() on a Linux server running Ubuntu 
 
 ## Installation
 ```
-wget -N https://raw.githubusercontent.com/westridaz/merge/master/merge_install.sh
-bash merge_install.sh
+wget -N https://raw.githubusercontent.com/westridaz/merge/master/masternode_install.sh
+bash masternode_install.sh
 ```
 ***
 
